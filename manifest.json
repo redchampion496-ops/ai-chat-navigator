@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "AI Prompt Outline",
+  "version": "0.5",
+  "description": "Índice cronológico e instantáneo de tus prompts en ChatGPT, Gemini y Claude.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://claude.ai/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
